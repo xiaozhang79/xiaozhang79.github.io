@@ -1,6 +1,7 @@
 :root {
   color:#494e52;
   background:#fff;
+  --site-blue:#285184;
   font-family:"Trebuchet MS", Helvetica, sans-serif;
   font-size:15px;
   line-height:1.5;
@@ -28,7 +29,8 @@ body.lightbox-open {
 }
 
 a {
-  color:#224372;
+  color:var(--site-blue);
+  font-weight:400;
 }
 
 a,
@@ -54,22 +56,19 @@ img {
 }
 
 h1,
-h2,
 h3,
 p {
   margin-top:0;
 }
 
 h1,
-h2,
 h3 {
   color:#111827;
   font-weight:700;
   line-height:1.2;
 }
 
-strong,
-b {
+strong {
   color:#111827;
   font-weight:900;
 }
@@ -134,10 +133,8 @@ li {
 
 .masthead__inner-wrap {
   padding:.5em;
-  font-family:"Comic Sans MS", "Comic Sans", cursive;
 }
 
-.masthead__menu::after,
 #main::after {
   display:table;
   clear:both;
@@ -240,11 +237,9 @@ li {
   .visible-links {
     z-index:10;
     background:#fff;
-    font-family:"Trebuchet MS", Helvetica, sans-serif;
   }
 
   .visible-links a {
-    font-family:"Trebuchet MS", Helvetica, sans-serif;
     font-size:.95em;
   }
 }
@@ -304,13 +299,11 @@ li {
 
 .author__name {
   margin:0;
-  color:#111827;
   font-size:1.2em;
 }
 
 .author__urls-wrapper {
   margin-left:auto;
-  font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
 
 .author__urls {
@@ -360,11 +353,13 @@ li {
   font-size:.95em;
 }
 
-.page__content #about-me {
+.page__content #about-me,
+.page__content .about-me-heading {
   margin-top:-10em;
 }
 
-.page__content #about-me::before {
+.page__content #about-me::before,
+.page__content .about-me-heading::before {
   display:block;
   width:0;
   height:10em;
@@ -375,7 +370,7 @@ li {
 .page__content h1 {
   margin:1em 0 .25em;
   padding-bottom:.25em;
-  border-bottom:2px solid #2d5998;
+  border-bottom:2px solid var(--site-blue);
   font-size:1.25em;
 }
 
@@ -391,10 +386,6 @@ li {
 
 .page__content h1 + p {
   margin-top:.25em;
-}
-
-.page__content a:hover img {
-  box-shadow:0 0 10px rgba(0, 0, 0, .25);
 }
 
 h1::before,
@@ -433,7 +424,6 @@ h1::before,
   width:100%;
   max-width:250px;
   box-shadow:3px 3px 6px #888;
-  object-fit:cover;
 }
 
 .paper-box-text {
@@ -460,7 +450,6 @@ h1::before,
 
 .paper-title {
   margin:0 0 .7em;
-  font-size:1em;
 }
 
 .paper-meta {
@@ -474,17 +463,16 @@ h1::before,
   font-size:.9em;
 }
 
-.paper-link {
-  text-decoration:none !important;
-}
-
-.paper-links .paper-link:hover,
-.paper-links .paper-link:focus {
-  text-decoration-line:underline !important;
-}
-
 .paper-link + .paper-link {
   margin-left:.25em;
+}
+
+.paper-link-ampersand {
+  font-family:"Times New Roman", serif;
+}
+
+.paper-link--placeholder {
+  color:var(--site-blue);
 }
 
 .education-list {
@@ -541,12 +529,9 @@ h1::before,
 
 .site-footer {
   margin-top:3em;
+  padding:2em 0 2.5em;
   border-top:1px solid #efefef;
   color:#7a8288;
-}
-
-.site-footer__inner {
-  padding:2em 0 2.5em;
 }
 
 .site-footer p {
@@ -594,10 +579,6 @@ h1::before,
 }
 
 @media (min-width:48em) {
-  .sidebar .author__name {
-    font-size:1.2em;
-  }
-
   .paper-box-image {
     justify-content:flex-start;
     order:1;

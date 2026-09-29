@@ -2,17 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <!-- begin SEO -->
     <title>Xiao Zhang (张啸) - Homepage</title>
     <meta property="og:locale" content="en">
     <meta property="og:site_name" content="Xiao Zhang (张啸) - Homepage">
     <meta property="og:title" content="Xiao Zhang (张啸) - Homepage">
     <link rel="canonical" href="https://xiaozhang79.github.io/">
     <meta property="og:url" content="https://xiaozhang79.github.io/">
-    <meta property="og:description" content="">
-    <!-- end SEO -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
     <base target="_blank">
@@ -38,10 +33,10 @@
           <nav id="site-nav" class="greedy-nav">
             <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false"><span class="navicon"></span></button>
             <ul id="primary-navigation" class="visible-links">
-              <li class="masthead__menu-item"><a href="#about-me">About Me</a></li>
-              <li class="masthead__menu-item"><a href="#news">News</a></li>
-              <li class="masthead__menu-item"><a href="#publications">Publications</a></li>
-              <li class="masthead__menu-item"><a href="#education">Education</a></li>
+              <li><a href="#about-me">About Me</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#publications">Publications</a></li>
+              <li><a href="#education">Education</a></li>
             </ul>
           </nav>
           <a class="masthead__homepage-link" href="#about-me">Homepage</a>
@@ -52,7 +47,7 @@
       <div class="sidebar sticky">
         <div itemscope itemtype="http://schema.org/Person" class="profile_box">
           <div class="author__avatar">
-            <img src="images/me.jpg" class="author__avatar" alt="Xiao Zhang (张啸)">
+            <img src="images/me.jpg" alt="Xiao Zhang (张啸)">
           </div>
           <div class="author__content">
             <h3 class="author__name">Xiao Zhang (张啸)</h3>
@@ -72,53 +67,55 @@
         </div>
       </div>
       <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <meta itemprop="headline" content="">
-        <div class="page__inner-wrap">
           <section class="page__content" itemprop="text">
             <p><span class="anchor" id="about-me"></span></p>
-            <h1 id="about-me">About Me</h1>
+            <h1 class="about-me-heading">About Me</h1>
             <p>I am currently a first-year master's student at <a href="https://www.csu.edu.cn">Central South University</a>, under the supervision of <a href="https://faculty.csu.edu.cn/kanshichao/zh_CN/index.htm">Prof. Shichao Kan</a>. Before that, I received my bachelor's degree from <a href="https://www.wit.edu.cn/index.htm">Wuhan Institute of Technology</a> in 2026, where I worked closely with <a href="https://luzzou.github.io">Prof. Lu Zou</a>.</p>
-            <p>My recent research focuses on <strong>Video Understanding</strong> and <strong>Multimodal Large Language Models (MLLMs)</strong>, with some exploration of <strong>6D Pose Estimation</strong> and <strong>3D Vision</strong>. If you are interested in collaborating with me, feel free to contact me via <a href="mailto:xiaozhang0479@gmail.com">xiaozhang0479@gmail.com</a> or <a href="images/wechat.jpg" data-lightbox-image>WeChat</a>!</p>
+            <p>My recent research focuses on <strong>Multimodal Large Language Models (MLLMs)</strong>, <strong>Video Understanding</strong>, and <strong>Spatial Intelligence</strong>. If you are interested in collaborating with me, please feel free to contact me via <a href="mailto:xiaozhang0479@gmail.com">xiaozhang0479@gmail.com</a> or <a href="images/wechat.jpg" data-lightbox-image>WeChat</a>!</p>
             <h1 id="news">News</h1>
             <ul>
             <li>🎉 <span class="news-date">2026.07:</span> <strong>REF-Pose</strong> is accepted by <strong>ACM MM 2026</strong>.</li>
-            <li>🎉 <span class="news-date">2026.04:</span> I join <img class="sensetime-logo" src="images/sensetime-logo.png" alt="SenseTime" /> <strong>SenseTime</strong> as a research intern.</li>
+            <li>🎉 <span class="news-date">2026.04:</span> I join <img class="sensetime-logo" src="images/sensetime-logo.png" alt="SenseTime" /> <strong>SenseTime Research</strong> as a research intern.</li>
             <li>🎉 <span class="news-date">2025.04:</span> My first work, <strong>INKL-Pose</strong>, is available on arXiv.</li>
             </ul>
             <h1 id="publications">Publications</h1>
             <div class="paper-box">
               <div class="paper-box-image">
-                <div>
-                  <img src="images/camvlm.jpg" alt="CamVLM" width="100%" />
-                </div>
+                <img src="images/simplecluster.png" alt="SimpleCluster" />
               </div>
               <div class="paper-box-text">
-                <p class="paper-title"><strong>Thinking with Cameras: Active Visual Reasoning via Dynamic Viewpoint Control for Surveillance Video Understanding</strong></p>
+                <p class="paper-title"><strong>Rethinking Visual Token Compression for Video Large Language Models: A Simple Yet Strong Baseline</strong></p>
                 <p class="paper-meta"><strong>Xiao Zhang</strong>, Wang Zeng, Sheng Jin, Wentao Liu, Chen Qian, Shichao Kan</p>
-                <p class="paper-meta">Work was done during an internship at <img class="sensetime-logo" src="images/sensetime-logo.png" alt="SenseTime" /> SenseTime</p>
                 <p class="paper-meta">arXiv Preprint 2026</p>
-                <p class="paper-links"><a class="paper-link" href="https://arxiv.org/abs/2609.06475">[Paper]</a> <a class="paper-link" href="https://github.com/xiaozhang79/CamVLM">[Code]</a> <a class="paper-link" href="">[Datasets]</a> <a class="paper-link" href="">[Models]</a></p>
+                <p class="paper-links"><a class="paper-link" href="https://arxiv.org/abs/2609.35394">[Paper]</a> <a class="paper-link" href="https://github.com/xiaozhang79/SimpleCluster">[Code]</a></p>
               </div>
             </div>
             <div class="paper-box">
               <div class="paper-box-image">
-                <div>
-                  <img src="images/ref-pose.png" alt="sym" width="100%" />
-                </div>
+                <img src="images/camvlm.jpg" alt="CamVLM" />
+              </div>
+              <div class="paper-box-text">
+                <p class="paper-title"><strong>Thinking with Cameras: Active Visual Reasoning via Dynamic Viewpoint Control for Surveillance Video Understanding</strong></p>
+                <p class="paper-meta"><strong>Xiao Zhang</strong>, Wang Zeng, Sheng Jin, Wentao Liu, Chen Qian, Shichao Kan</p>
+                <p class="paper-meta">arXiv Preprint 2026</p>
+                <p class="paper-links"><a class="paper-link" href="https://arxiv.org/abs/2609.06475">[Paper]</a> <a class="paper-link" href="https://github.com/xiaozhang79/CamVLM">[Code]</a> <a class="paper-link" href="https://huggingface.co/collections/xiaozhang79/camvlm">[Model <span class="paper-link-ampersand">&amp;</span> Datasets]</a></p>
+              </div>
+            </div>
+            <div class="paper-box">
+              <div class="paper-box-image">
+                <img src="images/ref-pose.png" alt="REF-Pose" />
               </div>
               <div class="paper-box-text">
                 <p class="paper-title"><strong>Rotation-Equivariant and Spatially Factorized Keypoint Modeling for Category-Level Object Pose Estimation</strong></p>
                 <p class="paper-meta">Lu Zou, <strong>Xiao Zhang</strong>, Zhangjin Huang, Guoping Wang</p>
                 <p class="paper-meta"><strong>Student First Author</strong></p>
                 <p class="paper-meta">The 34th ACM International Conference on Multimedia (<strong>ACM MM 2026</strong>)</p>
-                <p class="paper-links"><a class="paper-link" href="">[Paper]</a></p>
+                <p class="paper-links"><span class="paper-link paper-link--placeholder">[Paper]</span></p>
               </div>
             </div>
             <div class="paper-box paper-box--last">
               <div class="paper-box-image">
-                <div>
-                  <img src="images/inkl-pose.jpg" alt="sym" width="100%" />
-                </div>
+                <img src="images/inkl-pose.jpg" alt="INKL-Pose" />
               </div>
               <div class="paper-box-text">
                 <p class="paper-title"><strong>Instance-Adaptive Keypoint Learning with Local-to-Global Geometric Aggregation for Category-Level Object Pose Estimation</strong></p>
@@ -145,12 +142,9 @@
               </li>
             </ul>
             <footer class="site-footer">
-              <div class="site-footer__inner">
-                <p>© 2026 Xiao Zhang. Powered by <a href="https://github.com/RayeRen/acad-homepage.github.io">AcadHomepage</a>.</p>
-              </div>
+              <p>© 2026 Xiao Zhang. Powered by <a href="https://github.com/RayeRen/acad-homepage.github.io">AcadHomepage</a>.</p>
             </footer>
           </section>
-        </div>
       </article>
     </div>
     <div id="image-lightbox" class="image-lightbox" role="dialog" aria-modal="true" aria-label="Expanded image" hidden>
